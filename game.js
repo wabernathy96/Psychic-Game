@@ -42,13 +42,6 @@ var resetGame = function() {
     updateLetGs();
 }
 
-// Creates a function to reset the user input (Ui)
-var resetUi = function(){
-    // Grabs the div "guess" and sets it to a blank array
-    document.getElementById("guess").innerHTML = [];
-}
-
-
 // Creates a function when the user presses a key 
 document.onkeyup = function(event){
     // When a key is pressed the guesses left go down by 1
@@ -77,11 +70,10 @@ document.onkeyup = function(event){
             // Run the "resetGame" function
             resetGame();
         }
-        // If userInput /= randLetter (false):
-        else{
-            // Run the "resetUi" function
-            resetUi();
-        }
+        // If the above is false:
+       else{
+            // Don't allow the letter guessed to be used again
+       }
     }
     // Or else, once the amount of guesses left reaches 0:
     else if(gsLeft == 0){

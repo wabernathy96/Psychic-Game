@@ -1,4 +1,39 @@
-var winSet = [j] + 1;
-var addWin = document.createElement("wins")
-addWin.innerHTML = winSet;
-wins.appendChild(addWin);
+var losses = document.getElementById("loss");
+                        for (k=0; k=losses; k++){
+                            var lossSet = losses[k] + 1;
+                            var addLoss = document.createElement("lossPlus")
+                            addLoss.innerHTML = lossSet;
+                            lossPlus.appendChild(addLoss);
+                                console.log(lossSet);
+
+
+function userInput (){
+    var userGuess = document.getElementById("#guess");
+        document.onkeyup = function(event){
+            userGuess = event.key;
+                console.log(userGuess);
+                for(i=0; i<letters.length; i++){
+                    if(randLetter.indexOf(userGuess) = 1){
+                        var wins = document.getElementById("#win");
+                        for(j=0; j=wins; j++){
+                            var winSet = wins[j] + 1;
+                            var addWin = document.createElement("winPlus")
+                            addWin.innerHTML = winSet;
+                            winPlus.appendChild(addWin);  
+                                console.log(winSet);
+                        }
+                        alert("You guessed correctly!");
+                    }
+                    else{ 
+                        var gsLeft = document.getElementById("#guessleft");
+                        for (l=0; l=gsLeft; l--){
+                            var gsSet = gsLeft[l] - 1;
+                            var addGs = document.createElement("gsPlus")
+                            addGs.innerHTML = gsSet;
+                            gsPlus.appendChild(addGs);
+                                console.log(gsSet);
+                        }
+                    }
+                }
+        }
+}
